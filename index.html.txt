@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💗 Для котечки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(145deg, #ffe2e8, #ffccd3);
+            font-family: 'Segoe UI', 'Quicksand', system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            max-width: 750px;
+            width: 100%;
+            background: #fffafa;
+            border-radius: 80px 80px 80px 80px;
+            padding: 45px 35px;
+            box-shadow: 0 35px 45px #d66b8090;
+            border: 8px solid white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: "💗💗💗";
+            position: absolute;
+            font-size: 110px;
+            opacity: 0.07;
+            top: -10px;
+            right: -15px;
+            transform: rotate(20deg);
+        }
+        .card::after {
+            content: "🐱💕";
+            position: absolute;
+            font-size: 130px;
+            opacity: 0.07;
+            bottom: -30px;
+            left: -15px;
+            transform: rotate(-10deg);
+        }
+        .avatar {
+            font-size: 100px;
+            background: #ffeef2;
+            display: inline-block;
+            padding: 10px 40px;
+            border-radius: 150px;
+            border: 6px dashed #ff8da6;
+            margin-bottom: 15px;
+        }
+        .to {
+            font-size: 55px;
+            font-weight: 800;
+            color: #b32b4a;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            word-break: break-word;
+            text-shadow: 2px 2px 0 #ffe0e5;
+        }
+        .message {
+            font-size: 28px;
+            font-weight: 550;
+            color: #4d1f2c;
+            background: #ffe9eddc;
+            padding: 30px 25px;
+            border-radius: 70px;
+            margin: 20px 0;
+            backdrop-filter: blur(8px);
+            line-height: 1.5;
+            word-break: break-word;
+            border: 4px dotted #ff99aa;
+            text-align: left;
+            white-space: pre-line;
+        }
+        .from {
+            font-size: 45px;
+            color: #771e2e;
+            font-style: italic;
+            border-top: 5px solid #ffb6c1;
+            padding-top: 20px;
+            margin-top: 15px;
+            font-weight: 650;
+        }
+        .heart {
+            font-size: 60px;
+            margin-top: 15px;
+            animation: pulse 1.8s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.25); text-shadow: 0 0 25px #ff3b4a; }
+        }
+        .small {
+            margin-top: 25px;
+            color: #b45a6a;
+            font-size: 20px;
+            letter-spacing: 4px;
+            border-top: 2px solid #ffd2d9;
+            padding-top: 20px;
+        }
+        @media (max-width: 500px) {
+            .card { padding: 25px; }
+            .to { font-size: 45px; }
+            .message { font-size: 24px; }
+            .from { font-size: 35px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">🐱💗</div>
+        <div class="to">Котечка</div>
+        <div class="message">
+            котечка, я тебя очень сильно люблю. 
+            спасибо большое тебе что мы с тобой вместе, 
+            что ты радуешь меня каждый день. 
+            
+            мы с тобой проделали такой большой путь, 
+            и у нас многое еще впереди!!!! 
+            
+            поздравляю тебя с днем святого валентина💗💗💗 
+            хочу любить и радовать тебя каждый день. 
+            спасибо за то, что ты моя валентинка.
+        </div>
+        <div class="from">Твоя половинка</div>
+        <div class="heart">💗💗💗</div>
+        <div class="small">💘 14 февраля · навсегда твоя</div>
+    </div>
+</body>
+</html>
